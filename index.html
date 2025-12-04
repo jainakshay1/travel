@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Himachal Adventure 2025</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700;900&family=Space+Grotesk:wght@300;500;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <canvas id="snow-canvas"></canvas>
+
+    <header class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="glitch-wrapper">
+                <h1 class="glitch" data-text="HIMACHAL 2025">HIMACHAL 2025</h1>
+            </div>
+            <p class="subtitle">The Frozen Trail Awaits</p>
+            <div class="dates">Dec 17 — Dec 27</div>
+            <a href="#trail-start" class="cta-btn">Start the Journey</a>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </header>
+
+    <main id="trail-start" class="trail-container">
+        <div class="trail-line"></div>
+
+        <!-- Day 1 -->
+        <div class="day-node" data-day="1">
+            <div class="node-marker">01</div>
+            <div class="day-card glass">
+                <div class="card-image">
+                    <img src="images/day1_travel_1764825837351.png" alt="Night Bus Travel" loading="lazy">
+                    <div class="card-date">Dec 17</div>
+                </div>
+                <div class="card-content">
+                    <div class="card-header">
+                        <h2>Sagar → Delhi</h2>
+                        <span class="badge transport">Overnight Journey</span>
+                    </div>
+                    <p class="summary">The adventure begins. Departing from Sagar for an overnight journey to the
+                        capital.</p>
+                    <div class="log-grid">
+                        <div class="log-item">
+                            <span class="time">11:30 AM</span>
+                            <span class="activity">Depart Sagar (Bus/Train)</span>
+                        </div>
+                        <div class="log-item">
+                            <span class="time">Night</span>
+                            <span class="activity">Overnight Travel to Delhi</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Day 2 -->
+        <div class="day-node" data-day="2">
+            <div class="node-marker">02</div>
+            <div class="day-card glass">
+                <div class="card-image">
+                    <img src="images/day2_delhi_1764825852995.png" alt="Delhi Market" loading="lazy">
+                    <div class="card-date">Dec 18</div>
+                </div>
+                <div class="card-content">
+                    <div class="card-header">
+                        <h2>Delhi Day</h2>
+                        <span class="badge city">City Vibes</span>
+                    </div>
+                    <p class="summary">Early arrival in Delhi. Breakfast, freshen up, and shopping before the mountains.
+                    </p>
+                    <div class="log-grid">
+                        <div class="log-item">
+                            <span class="time">Morning</span>
+                            <span class="activity">Arrive & Freshen Up</span>
+                        </div>
+                        <div class="log-item">
+                            <span class="time">Breakfast</span>
+                            <span class="activity">Cafe at ISBT / Majnu ka Tila</span>
+                        </div>
+                        <div class="log-item">
+                            <span class="time">Day</span>
+                            <span class="activity">Shopping or Sightseeing</span>
+                        </div>
+                        <div class="log-item">
+                            <span class="time">Evening</span>
+                            <span class="activity">Volvo from ISBT/MKT → Bhuntar</span>
+                        </div>
+                        <div class="log-item">
+                            <span class="time">Night</span>
+                            <span class="activity">Overnight Mountain Journey</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Day 3 -->
+        <div class="day-node" data-day="3">
+            <div class="node-marker">03</div>
+            <div class="day-card glass">
+                <div class="card-image">
+                    <img src="images/day3_bike_1764825869161.png" alt="Bike Ride Parvati Valley" loading="lazy">
+                    <div class="card-date">Dec 19</div>
+                </div>
+                <div class="card-content">
+                    <div class="card-header">
+                        <h2>Bhuntar → Kasol</h2>
+                        <span class="badge adventure">Moto Ride</span>
+                    </div>
+                    <p class="summary">Morning arrival in Bhuntar. Rent bikes and ride into Parvati Valley.</p>
+                    <div class="log-grid">
+                        <div class="log-item">
+                            <span class="time">Morning</span>
+                            <span class="activity">Arrive Bhuntar</span>
+                        </div>
+                        <div class="log-item">
+                            <span class="time">Ride</span>
+                            <span class="activity">Rent bikes → Ride to Kasol</span>
+                        </div>
+                        <div class="log-item">
+                            <span class="time">Stay</span>
+                            <span class="activity">Check-in + Rest</span>
+                        </div>
+                        <div class="log-item">
+                            <span class="time">Explore</span>
+                            <span class="activity">Parvati Valley, Cafés, Riverside</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Day 4 -->
+        <div class="day-node" data-day="4">
+            <div class="node-marker">04</div>
+            <div class="day-card glass">
+                <div class="card-image">
+                    <img src="images/day4_tosh_1764825886053.png" alt="Tosh Village" loading="lazy">
+                    <div class="card-date">Dec 20</div>
+                </div>
+                <div class="card-content">
+                    <div class="card-header">
+                        <h2>Kasol → Tosh → Manali</h2>
+                        <span class="badge trek">Trek & Chill</span>
+                    </div>
+                    <p class="summary">A packed day of trekking, hot springs, and riding to Manali.</p>
+                    <div class="log-grid">
+                        <div class="log-item">
+                            <span class="time">Morning</span>
+                            <span class="activity">Trek to Chalal</span>
+                        </div>
+                        <div class="log-item">
+                            <span class="time">Visit</span>
+                            <span class="activity">Manikaran → Hot Spring + Langar</span>
+                        </div>
+                        <div class="log-item">
+                            <span class="time">Trek</span>
+                            <span class="activity">Tosh Waterfall</span>
+                        </div>
+                        <div class="log-item">
+                            <span class="time">Evening</span>
+                            <span class="activity">Tosh → Manali (Reach 8 PM)</span>
+                        </div>
+                        <div class="log-item">
+                            <span class="time">Night</span>
+                            <span class="activity">Stay in Manali</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Day 5 -->
+        <div class="day-node" data-day="5">
+            <div class="node-marker">05</div>
+            <div class="day-card glass">
+                <div class="card-image">
+                    <img src="images/day5_manali_1764825900473.png" alt="Old Manali Cafe" loading="lazy">
+                    <div class="card-date">Dec 21</div>
+                </div>
+                <div class="card-content">
+                    <div class="card-header">
+                        <h2>Manali Sightseeing</h2>
+                        <span class="badge culture">Culture & Vibes</span>
+                    </div>
+                    <p class="summary">Exploring the best of Manali, from snowy valleys to ancient temples.</p>
+                    <div class="log-grid">
+                        <div class="log-item">
+                            <span class="time">Visit</span>
+                            <span class="activity">Hadimba Temple</span>
+                        </div>
+                        <div class="log-item">
+                            <span class="time">Relax</span>
+                            <span class="activity">Vashisht Temple & Baths</span>
+                        </div>
+                        <div class="log-item">
+                            <span class="time">Vibe</span>
+                            <span class="activity">Old Manali Cafés</span>
+                        </div>
+                        <div class="log-item">
+                            <span class="time">Walk</span>
+                            <span class="activity">Mall Road</span>
+                        </div>
+                        <div class="log-item">
+                            <span class="time">Optional</span>
+                            <span class="activity">Solang Valley</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Day 6 -->
+        <div class="day-node" data-day="6">
+            <div class="node-marker">06</div>
+            <div class="day-card glass">
+                <div class="card-image">
+                    <img src="images/day6_snow_1764825915329.png" alt="Snow Adventure" loading="lazy">
+                    <div class="card-date">Dec 22</div>
+                </div>
+                <div class="card-content">
+                    <div class="card-header">
+                        <h2>Atal Tunnel & Snow</h2>
+                        <span class="badge snow">Full Snow Fun</span>
+                    </div>
+                    <p class="summary">The grand finale in Manali before heading to Shimla.</p>
+                    <div class="log-grid">
+                        <div class="log-item">
+                            <span class="time">Day</span>
+                            <span class="activity">Atal Tunnel → Sissu (Full Snow Fun)</span>
+                        </div>
+                        <div class="log-item">
+                            <span class="time">Action</span>
+                            <span class="activity">Skiing / ATV / Snow Scooter</span>
+                        </div>
+                        <div class="log-item">
+                            <span class="time">Evening</span>
+                            <span class="activity">Evening in Manali & Pack Bags</span>
+                        </div>
+                        <div class="log-item">
+                            <span class="time">10-11 PM</span>
+                            <span class="activity">Volvo → Reach Shimla 5-6 AM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Day 7 -->
+        <div class="day-node" data-day="7">
+            <div class="node-marker">07</div>
+            <div class="day-card glass">
+                <div class="card-image">
+                    <img src="images/day5_manali_1764825900473.png" alt="Kalpa Mountains" loading="lazy">
+                    <div class="card-date">Dec 23</div>
+                </div>
+                <div class="card-content">
+                    <div class="card-header">
+                        <h2>Shimla → Kalpa</h2>
+                        <span class="badge trek">Kinnaur Entry</span>
+                    </div>
+                    <p class="summary">Arrive in Shimla and immediately leave for Kalpa. Don't waste time in Shimla.</p>
+                    <div class="log-grid">
+                        <div class="log-item">
+                            <span class="time">Morning</span>
+                            <span class="activity">Arrive Shimla → Have Breakfast</span>
+                        </div>
+                        <div class="log-item">
+                            <span class="time">Drive</span>
+                            <span class="activity">Shimla → Narkanda → Rampur → Peo → Kalpa</span>
+                        </div>
+                        <div class="log-item">
+                            <span class="time">4 PM</span>
+                            <span class="activity">Reach Kalpa</span>
+                        </div>
+                        <div class="log-item">
+                            <span class="time">View</span>
+                            <span class="activity">Sunset over Kinner Kailash</span>
+                        </div>
+                        <div class="log-item">
+                            <span class="time">Stay</span>
+                            <span class="activity">Kalpa</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Day 8 -->
+        <div class="day-node" data-day="8">
+            <div class="node-marker">08</div>
+            <div class="day-card glass">
+                <div class="card-image">
+                    <img src="images/day6_snow_1764825915329.png" alt="Nako Lake" loading="lazy">
+                    <div class="card-date">Dec 24</div>
+                </div>
+                <div class="card-content">
+                    <div class="card-header">
+                        <h2>Kalpa → Nako → Kalpa</h2>
+                        <span class="badge adventure">High Altitude</span>
+                    </div>
+                    <p class="summary">Attempt reaching Nako village. Return to Kalpa by evening.</p>
+                    <div class="log-grid">
+                        <div class="log-item">
+                            <span class="time">Attempt</span>
+                            <span class="activity">Try for Nako Village</span>
+                        </div>
+                        <div class="log-item">
+                            <span class="time">If Open</span>
+                            <span class="activity">Visit Frozen Nako Lake (if Malling open)</span>
+                        </div>
+                        <div class="log-item">
+                            <span class="time">If Closed</span>
+                            <span class="activity">Go till safe checkpost</span>
+                        </div>
+                        <div class="log-item">
+                            <span class="time">Evening</span>
+                            <span class="activity">Return to Kalpa</span>
+                        </div>
+                        <div class="log-item">
+                            <span class="time">Stay</span>
+                            <span class="activity">Kalpa</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Day 9 -->
+        <div class="day-node" data-day="9">
+            <div class="node-marker">09</div>
+            <div class="day-card glass">
+                <div class="card-image">
+                    <img src="images/day4_tosh_1764825886053.png" alt="Chitkul Village" loading="lazy">
+                    <div class="card-date">Dec 25</div>
+                </div>
+                <div class="card-content">
+                    <div class="card-header">
+                        <h2>Kalpa → Chitkul</h2>
+                        <span class="badge snow">Last Village</span>
+                    </div>
+                    <p class="summary">Journey to Chitkul via Sangla Valley. Open till 27-28 Dec most years.</p>
+                    <div class="log-grid">
+                        <div class="log-item">
+                            <span class="time">Drive</span>
+                            <span class="activity">Kalpa → Karcham → Sangla Valley</span>
+                        </div>
+                        <div class="log-item">
+                            <span class="time">Explore</span>
+                            <span class="activity">Sangla & Rakcham Snow</span>
+                        </div>
+                        <div class="log-item">
+                            <span class="time">Try</span>
+                            <span class="activity">Reach Chitkul (Frozen River)</span>
+                        </div>
+                        <div class="log-item">
+                            <span class="time">Enjoy</span>
+                            <span class="activity">Snow, Frozen River, Photo Spots</span>
+                        </div>
+                        <div class="log-item">
+                            <span class="time">Stay</span>
+                            <span class="activity">Kalpa or Sangla</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Day 10 -->
+        <div class="day-node" data-day="10">
+            <div class="node-marker">10</div>
+            <div class="day-card glass">
+                <div class="card-image">
+                    <img src="images/day3_bike_1764825869161.png" alt="Return Journey" loading="lazy">
+                    <div class="card-date">Dec 26</div>
+                </div>
+                <div class="card-content">
+                    <div class="card-header">
+                        <h2>Return to Shimla</h2>
+                        <span class="badge transport">Scenic Drive</span>
+                    </div>
+                    <p class="summary">Start return journey. Take it slow along Sutlej.</p>
+                    <div class="log-grid">
+                        <div class="log-item">
+                            <span class="time">Start</span>
+                            <span class="activity">Depart Kalpa/Sangla</span>
+                        </div>
+                        <div class="log-item">
+                            <span class="time">Drive</span>
+                            <span class="activity">Take it slow along Sutlej</span>
+                        </div>
+                        <div class="log-item">
+                            <span class="time">Evening</span>
+                            <span class="activity">Reach Shimla or Narkanda</span>
+                        </div>
+                        <div class="log-item">
+                            <span class="time">Stay</span>
+                            <span class="activity">Narkanda or Shimla</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Day 11 -->
+        <div class="day-node" data-day="11">
+            <div class="node-marker">11</div>
+            <div class="day-card glass">
+                <div class="card-image">
+                    <img src="images/day1_travel_1764825837351.png" alt="Homecoming" loading="lazy">
+                    <div class="card-date">Dec 27</div>
+                </div>
+                <div class="card-content">
+                    <div class="card-header">
+                        <h2>Shimla → Home</h2>
+                        <span class="badge city">The End</span>
+                    </div>
+                    <p class="summary">Shimla/Narkanda to Delhi, then back to Sagar. Same day travel.</p>
+                    <div class="log-grid">
+                        <div class="log-item">
+                            <span class="time">Morning</span>
+                            <span class="activity">Depart Shimla/Narkanda</span>
+                        </div>
+                        <div class="log-item">
+                            <span class="time">Travel</span>
+                            <span class="activity">Drive to Delhi</span>
+                        </div>
+                        <div class="log-item">
+                            <span class="time">Evening</span>
+                            <span class="activity">Delhi → Sagar (Same Day Travel)</span>
+                        </div>
+                        <div class="log-item">
+                            <span class="time">End</span>
+                            <span class="activity">Trip Complete</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Made for the Mountains 🏔️</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
